@@ -1,10 +1,7 @@
-// var genreadme;
-class markDown {
-    static generateReadMe(data) {
-        return `
-${data.title}
 
-${data.license}
+notetaker
+
+mit
     
 ## Table of Contents
 - [Description](#description)
@@ -16,25 +13,21 @@ ${data.license}
     
         
 # Description
-${data.description}
+jfsaljlsajlfkjasofjosaijfoiewtjofsjalk
     
 # Usage
-${data.usage}
+help make readmes easier
     
 # Installation
-${data.installInstructions}
+download this file and have the stuff downloaded
     
 # Contributors
-${data.contributers}
+tutor
     
 # Questions
-${data.question}
-${data.github}
-${data.email}
+no
+tyguymills
+email - tyguymills@gmail.com
     
 # License
-${data.license}`
-    }
-}
-
-module.exports = markDown;
+mit

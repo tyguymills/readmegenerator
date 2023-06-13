@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
-const inquirer = require('inquirer');
 const fs = require('fs');
+/** @type {inquirer} */
+const inquirer = require('inquirer');
 const markDown = require("./readmegen");
 const path = require("path");
 
@@ -89,7 +90,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then((data) => {
         console.log("Initializing the Setup of your Own Personalized Readme File");
-        writeToFile("./readmegen", readmegen({...data}));
+        writeToFile(`${data.title}.md`, markDown.generateReadMe({...data}));
     });
 }
 
@@ -112,8 +113,8 @@ function runQuestionaire() {
 
 
 
-runQuestionaire()
-writeToFile()
+// runQuestionaire()
+// writeToFile()
 
 //description, tableOfContents, installation, usage, license, contributing, tests, questionArea
 
